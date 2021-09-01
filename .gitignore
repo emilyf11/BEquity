@@ -44,6 +44,9 @@ bower_components
 # Compiled binary addons (http://nodejs.org/api/addons.html)
 build/Release
 
+# intelliJ
+./idea
+
 # Dependency directories
 node_modules/
 
