@@ -7,6 +7,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
     <link rel="shortcut icon" type="image/x-icon" href="/images/smalllogo.png">
     <title>BEquity</title>
 
@@ -32,70 +33,30 @@
   </head>
 
 
-
   <body>
-  <!-- Navbar (sit on top) -->
-  <div class="w3-top">
-    <div class="w3-bar w3-white w3-wide w3-padding w3-card">
-      <a href="#home" class="w3-bar-item w3-button">Welcome to BEquity!</a>
-      <!-- Float links to the right. Hide them on small screens -->
-      <div class="w3-right w3-hide-small">
-        <a href="#about" class="w3-bar-item w3-button">About</a>
-        <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+    <style>
+  body,h1 {font-family: "Raleway", sans-serif}
+  body, html {height: 100%}
+  .bgimg {
+    background-image: url('/w3images/forestbridge.jpg');
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+  }
+  </style>
+    <div oncontextmenu="return false;" class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+      <div class="w3-display-topleft w3-padding-large w3-xlarge">
+        <img src="/images/logo1.png">
+      </div>
+      <div class="w3-display-middle">
+        <h1 class="w3-jumbo w3-animate-top">COMING SOON</h1>
+        <hr class="w3-border-grey" style="margin:auto;width:40%">
+        <p class="w3-large w3-center">35 days left</p>
+      </div>
+      <div class="w3-display-bottomleft w3-padding-large">
+        Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
       </div>
     </div>
-  </div>
-  <!-- Header -->
-  <header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
-    <img class="w3-image" src="/images/logo1.png" alt="Logo" width="1500" height="800">
-    <div class="w3-display-middle w3-margin-top w3-center">
-      <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min">Welcome to BEquity</span></h1>
-    </div>
-  </header>
-
-  <!-- Page content -->
-  <div class="w3-content w3-padding" style="max-width:1564px">
-
-    <!-- About Section -->
-    <div class="w3-panel w3-leftbar w3-border-blue w3-pale-blue" id="about">
-      <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">About</h3>
-      Site under construction.
-      <br/>
-      <img alt="Construction Cone" width="20%" height="20%"  onContextMenu="return false;"  src="/images/cone.png"/>
-    </div>
-
-    <div class="w3-panel w3-leftbar w3-border-blue w3-pale-blue">
-      <div class="w3-col l3 m6 w3-margin-bottom">
-        <img  onContextMenu="return false;"  src="/images/logo1.png" alt="Emily" style="width:100%">
-        <h3>Emily</h3>
-        <p class="w3-opacity">CEO & Founder</p>
-        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-        <p><button class="w3-button w3-light-grey w3-block"><a href="mailto:emily@bequity.org">Contact</a></button></p>
-      </div>
-    </div>
-
-    <!-- Contact Section -->
-    <div class="w3-panel w3-leftbar w3-border-blue w3-pale-blue" id="contact">
-      <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contact</h3>
-      <p>Contact us for more information.</p>
-      <form action="/action_page.php" target="_blank">
-        <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
-        <input class="w3-input w3-section w3-border" type="text" placeholder="Email" required name="Email">
-        <input class="w3-input w3-section w3-border" type="text" placeholder="Subject" required name="Subject">
-        <input class="w3-input w3-section w3-border" type="text" placeholder="Comment" required name="Comment">
-        <button class="w3-button w3-black w3-section" type="submit">
-          <i class="fa fa-paper-plane"></i> SEND MESSAGE
-        </button>
-      </form>
-    </div>
-
-    <!-- Image of location/map -->
-    <div class="w3-container">
-      <img onContextMenu="return false;"   src="/images/us-map-icon_7304.png" class="w3-image" style="width:50%">
-    </div>
-
-    <!-- End page content -->
-  </div>
 
 
   <!-- Footer -->
@@ -143,5 +104,6 @@
         }
       });
     </script>
+
   </body>
 </html>
