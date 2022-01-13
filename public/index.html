@@ -3,51 +3,67 @@
 
 
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-    <link rel="shortcut icon" type="image/x-icon" href="/images/smalllogo.png">
-    <title>BEquity</title>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link rel="shortcut icon" type="image/x-icon" href="/images/smalllogo.png">
+  <title>BEquity</title>
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/9.0.1/firebase-app.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/9.0.1/firebase-auth.js"></script>
-    <script defer src="/__/firebase/9.0.1/firebase-database.js"></script>
-    <script defer src="/__/firebase/9.0.1/firebase-firestore.js"></script>
-    <script defer src="/__/firebase/9.0.1/firebase-functions.js"></script>
-    <script defer src="/__/firebase/9.0.1/firebase-messaging.js"></script>
-    <script defer src="/__/firebase/9.0.1/firebase-storage.js"></script>
-    <script defer src="/__/firebase/9.0.1/firebase-analytics.js"></script>
-    <script defer src="/__/firebase/9.0.1/firebase-remote-config.js"></script>
-    <script defer src="/__/firebase/9.0.1/firebase-performance.js"></script>
-    <!-- 
+  <!-- update the version number as needed -->
+  <script defer src="/__/firebase/9.0.1/firebase-app.js"></script>
+  <!-- include only the Firebase features as you need -->
+  <script defer src="/__/firebase/9.0.1/firebase-auth.js"></script>
+  <script defer src="/__/firebase/9.0.1/firebase-database.js"></script>
+  <script defer src="/__/firebase/9.0.1/firebase-firestore.js"></script>
+  <script defer src="/__/firebase/9.0.1/firebase-functions.js"></script>
+  <script defer src="/__/firebase/9.0.1/firebase-messaging.js"></script>
+  <script defer src="/__/firebase/9.0.1/firebase-storage.js"></script>
+  <script defer src="/__/firebase/9.0.1/firebase-analytics.js"></script>
+  <script defer src="/__/firebase/9.0.1/firebase-remote-config.js"></script>
+  <script defer src="/__/firebase/9.0.1/firebase-performance.js"></script>
+  <!-- 
       initialize the SDK after all desired features are loaded, set useEmulator to false
       to avoid connecting the SDK to running emulators.
     -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
-    <style>
-      h1 { text-align: center; font-family: "Raleway", sans-serif}
-      html,body { width: 100%; height: 100%; margin: 0px; padding: 0px; overflow-x: hidden; }
-      .bgimg { background-image: url('/images/bckg.png'); min-height: 100%; background-position: center;background-size: cover;
-      }
-    </style>
+  <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+  <style>
+    h1 {
+      text-align: center;
+      font-family: "Raleway", sans-serif
+    }
+
+    html,
+    body {
+      width: 100%;
+      height: 100%;
+      margin: 0px;
+      padding: 0px;
+      overflow-x: hidden;
+    }
+
+    .bgimg {
+      background-image: url('/images/bckg.png');
+      min-height: 100%;
+      background-position: center;
+      background-size: cover;
+    }
+  </style>
 
 
-  </head>
+</head>
 
 
-  <body>
-    <div oncontextmenu="return false;" class="bgimg w3-display-container w3-animate-opacity w3-text-black">
-      <div class="w3-display-middle">
-        <img alt="LOGO HERE" src="/images/logo1.png">
-        <h1 class="w3-jumbo w3-animate-top">COMING SOON</h1>
-        <hr class="w3-border-grey" style="margin:auto;width:40%">
-        <p id="demo" class="w3-large w3-center"></p>
-      </div>
+<body>
+  <div oncontextmenu="return false;" class="bgimg w3-display-container w3-animate-opacity w3-text-black">
+    <div class="w3-display-middle">
+      <img alt="LOGO HERE" src="/images/logo1.png">
+      <h1 class="w3-jumbo w3-animate-top">COMING SOON</h1>
+      <hr class="w3-border-grey" style="margin:auto;width:40%">
+      <p id="demo" class="w3-large w3-center"></p>
     </div>
+  </div>
 
   <!-- Footer -->
   <footer class="w3-center w3-black w3-padding-16">
@@ -56,74 +72,75 @@
 
 
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const loadEl = document.querySelector('#load');
+      // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+      // // The Firebase SDK is initialized and available here!
+      //
+      // firebase.auth().onAuthStateChanged(user => { });
+      // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
+      // firebase.firestore().doc('/foo/bar').get().then(() => { });
+      // firebase.functions().httpsCallable('yourFunction')().then(() => { });
+      // firebase.messaging().requestPermission().then(() => { });
+      // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
+      // firebase.analytics(); // call to activate
+      // firebase.analytics().logEvent('tutorial_completed');
+      // firebase.performance(); // call to activate
+      //
+      // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
 
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
-    <script>
-      // Set the date we're counting down to
-      var countDownDate = new Date("Jan 5, 2022 00:00:00").getTime();
+      try {
+        let app = firebase.app();
+        let features = [
+          'auth',
+          'database',
+          'firestore',
+          'functions',
+          'messaging',
+          'storage',
+          'analytics',
+          'remoteConfig',
+          'performance',
+        ].filter(feature => typeof app[feature] === 'function');
+        loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
+      } catch (e) {
+        console.error(e);
+        loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
+      }
+    });
+  </script>
+  <script>
+    // Set the date we're counting down to
+    var countDownDate = new Date("Mar 5, 2022 00:00:00").getTime();
 
-      // Update the count down every 1 second
-      var x = setInterval(function() {
+    // Update the countdown every 1 second
+    var x = setInterval(function () {
 
-        // Get today's date and time
-        var now = new Date().getTime();
+      // Get today's date and time
+      var now = new Date().getTime();
 
-        // Find the distance between now and the count down date
-        var distance = countDownDate - now;
+      // Find the distance between now and the countdown date
+      var distance = countDownDate - now;
 
-        // Time calculations for days, hours, minutes and seconds
-        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+      // Time calculations for days, hours, minutes and seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-        // Output the result in an element with id="demo"
-        document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+      // Output the result in an element with id="demo"
+      document.getElementById("demo").innerHTML = days + "d " + hours + "h "
         + minutes + "m " + seconds + "s ";
 
-        // If the count down is over, write some text
-        if (distance < 0) {
-          clearInterval(x);
-          document.getElementById("demo").innerHTML = "EXPIRED";
-        }
-      }, 1000);
+      // If the count down is over, write some text
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "EXPIRED";
+      }
+    }, 1000);
   </script>
 
-  </body>
+</body>
+
 </html>
